@@ -45,3 +45,40 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+        'sidebar header'
+        'sidebar main-content';
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: #1892d5;
+    grid-area: sidebar;
+}
+
+.sidebar > * {
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.main-content {
+    background-color: #e3e8f1;
+    grid-area: main-content;
+}
