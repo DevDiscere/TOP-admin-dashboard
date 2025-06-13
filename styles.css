@@ -202,6 +202,7 @@ body {
 }
 
 .nav-links li a {
+    color: white;
     height: 1.5rem;
     text-decoration: none;
 }
