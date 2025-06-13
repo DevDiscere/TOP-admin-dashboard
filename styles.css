@@ -55,19 +55,34 @@ body {
         'sidebar main-content';
 }
 
+/* Header CSS */
 .header {
     grid-area: header;
 }
 
+
+
+/* Sidebar CSS */
 .sidebar {
     background-color: #1892d5;
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 2rem;
+    padding: 1.5rem;
+}
+
+.sidebar li {
+    padding: 0.5rem 1rem;
 }
 
 .sidebar > * {
     color: white;
 }
 
+
+
+/* Navigation links CSS*/
 .nav-links {
     list-style-type: none;
     padding: 0;
@@ -78,6 +93,13 @@ body {
     text-decoration: none;
 }
 
+.nav-links li a:visited {
+    color: white;
+}
+
+
+
+/* Main Content CSS */
 .main-content {
     background-color: #e3e8f1;
     grid-area: main-content;
