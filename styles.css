@@ -88,6 +88,7 @@ body {
 
 .with-icon.big {
     column-gap: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -230,10 +231,11 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-    'project-gallery announcements'
-    'project-gallery trending';
+    'project-gallery relevant-posts'
+    'project-gallery relevant-posts';
     padding: 2rem 2rem 3.5rem 1.5rem;
     column-gap: 1.5rem;
+    box-shadow: inset 2px 2px 5px #aaaaaa;
 }
 
 .project-gallery {
@@ -255,7 +257,12 @@ body {
     border-left: 0.5rem solid #f0b429;
     border-radius: 0.5rem;
     display: grid;
-    grid-template-rows: max-content 1fr max-content
+    grid-template-rows: max-content 1fr max-content;
+    box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.project-cards p {
+    color: gray;
 }
 
 menu li a {
@@ -271,10 +278,65 @@ menu li a {
     margin-top: 1rem;
 }
 
+.relevant-posts {
+    grid-area: relevant-posts;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 2rem;
+}
+
 .announcements {
-    grid-area: announcements;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 0.5rem;
+}
+
+.announcement-list {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.single-announcement {
+    padding: 1rem 0;
+}
+
+.single-announcement:first-child {
+    border-bottom: 1px solid lightgrey;
+}
+
+.single-announcement:last-child {
+    border-top: 1px solid lightgrey;
+}
+
+.single-announcement p {
+    font-size: 12px;
+    color: gray;
 }
 
 .trending {
-    grid-area: trending;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 0.5rem;
+}
+
+.trending-list {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+    gap: 1.5rem;
+    box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1.5rem;
+}
+
+.user-title {
+    color: gray;
 }
