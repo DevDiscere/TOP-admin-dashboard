@@ -50,7 +50,7 @@ body {
     font-family: "Roboto", sans-serif;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: max-content 4fr;
     grid-template-areas: 
         'sidebar header'
         'sidebar main-content';
@@ -85,8 +85,81 @@ body {
 /* Header CSS */
 .header {
     grid-area: header;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 1.5rem;
+    box-shadow: 0 10px 0.5rem black;
 }
 
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-nav a {
+    text-decoration: none;
+    height: 1.5rem;
+}
+
+.header-nav a:visited {
+    color: black;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    gap: 1rem;
+}
+
+#searchbar {
+    background-color: #e3e8f1;
+    height: 2rem;
+    width: 36rem;
+    border-radius: 1rem;
+}
+
+.user-tab {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.user-tab a {
+    margin-left: 1.5rem;
+}
+
+.user-tab p {
+    font-weight: 700;
+}
+
+.header-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-info section {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-info p {
+    font-weight: 700;
+}
+
+.header-buttons {
+    background-color: #1892d5;
+    width: 6rem;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
 
 
 /* Sidebar CSS */
@@ -118,6 +191,7 @@ body {
 }
 
 .nav-links li a {
+    height: 1.5rem;
     text-decoration: none;
 }
 
@@ -125,6 +199,18 @@ body {
     color: white;
 }
 
+.nav-links.menu {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.nav-links.menu li a {
+    font-weight: 700;
+}
 
 
 /* Main Content CSS */

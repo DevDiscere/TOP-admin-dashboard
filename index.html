@@ -12,23 +12,30 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <!-- Searchbar -->
-            <!-- Notifications -->
-            <!-- Profile -->
-        </div>
-        <div>
-            <section>
-                <p>Hi there,</p>
-                <h1>Morgan Oakley (@morgan)</h1>
-            </section>
-            <div>
-                <menu class="nav-links">
-                    <li><a href="">New</a></li>
-                    <li><a href="">Upload</a></li>
-                    <li><a href="">Share</a></li>
-                </menu>
+        <div class="header-nav">
+            <div class="search">
+                <a href="#"><span class="material-symbols-outlined">search</span></a>
+                <div id="searchbar"></div>
             </div>
+            <div class="user-tab">
+                <a href="#"><span class="material-symbols-outlined">notifications_active</span></a>
+                <img src="./photos/user1_profile.png" alt="A rounded profile picture of a man smiling" width="48" height="48">
+                <p>Morgan Oakley</p>
+            </div>
+        </div>
+        <div class="header-info">
+            <section>
+                <img src="./photos/user1_profile.png" alt="A rounded profile picture of a man smiling" width="72" height="72">
+                <div class="user-info">
+                    <p>Hi there,</p>
+                    <h1>Morgan Oakley (@morgan)</h1>
+                </div>
+            </section>
+            <menu class="nav-links menu">
+                <li class="header-buttons"><a href="#">New</a></li>
+                <li class="header-buttons"><a href="#">Upload</a></li>
+                <li class="header-buttons"><a href="#">Share</a></li>
+            </menu>
         </div>
     </header>
     <aside class="sidebar">
@@ -36,20 +43,20 @@
 
         <nav>
             <ul class="nav-links">
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">home</span> Home</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">id_card</span> Profile</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">comment</span> Messages</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">schedule</span> History</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">assignment</span> Tasks</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">diversity_3</span> Communities</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">home</span> Home</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">id_card</span> Profile</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">comment</span> Messages</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">schedule</span> History</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">assignment</span> Tasks</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">diversity_3</span> Communities</a></li>
             </ul>
         </nav>
 
         <nav>
             <ul class="nav-links">
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">settings</span> Settings</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">help_center</span> Support</a></li>
-                <li><a class="with-icon" href=""><span class="material-symbols-outlined">verified_user</span> Privacy</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">settings</span> Settings</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">help_center</span> Support</a></li>
+                <li><a class="with-icon" href="#"><span class="material-symbols-outlined">verified_user</span> Privacy</a></li>
             </ul>
         </nav>
     </aside>
